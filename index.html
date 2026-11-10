@@ -741,6 +741,53 @@ footer p {
 .news-tag-past { background: var(--stone-light); color: var(--stone); }
 .news-tag-paper { background: var(--rust-light); color: var(--rust); }
 
+/* RUNNING RESULTS */
+.race-box {
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--rule);
+  border-top: 2px solid var(--rust);
+}
+
+.race-box h3 {
+  font-family: var(--ff-display);
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.race-results { list-style: none; }
+
+.race-results li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.35rem 1rem;
+  padding: 0.85rem 0;
+  border-top: 1px solid var(--rule);
+}
+
+.race-results li:last-child { padding-bottom: 0; }
+
+.race-results p {
+  color: var(--ink2);
+  font-size: 0.85rem;
+  margin-top: 0.2rem;
+}
+
+.race-time {
+  color: var(--rust);
+  font-size: 1.15rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.race-time-note {
+  display: block;
+  color: var(--ink2);
+  font-size: 0.75rem;
+}
+
 /* PHOTO GALLERY */
 .photo-gallery {
   display: grid;
@@ -1247,6 +1294,21 @@ nav a.active {
       <p>Outside academia I am passionate about endurance sports and tennis — cycling, running and tennis are my main outlets for staying active.</p>
       <p>You can follow my activities on <a href="https://www.strava.com/athletes/66112900" target="_blank" style="color:var(--rust);text-decoration:none;font-weight:500;">Strava →</a></p>
     </div>
+    <section class="race-box" aria-labelledby="half-marathons-title">
+      <h3 id="half-marathons-title">Half Marathons</h3>
+      <ul class="race-results" role="list">
+        <li>
+          <div>
+            <strong>Wizz Air Rome Half Marathon</strong>
+            <p>Rome, Italy · <time datetime="2026-10-18">18 Oct 2026</time></p>
+          </div>
+          <div>
+            <time class="race-time" datetime="PT1H44M30S">1:44:30</time>
+            <small class="race-time-note">Official time</small>
+          </div>
+        </li>
+      </ul>
+    </section>
   </div>
 
   <div class="section-rule" style="margin-top: 3rem;">
